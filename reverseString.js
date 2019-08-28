@@ -20,8 +20,8 @@ let reverseString = s => {
     // This saves the left value into the space where the right value was, swapping them
     s[right] = temp;
     // Left increments up and right increments down
-    ++left;
-    --right;
+    left++;
+    right--;
   }
   return s;
 };
