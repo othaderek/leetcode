@@ -30,8 +30,8 @@ const validAnagram = (stringOne, stringTwo) => {
   // When done, check to see if the keys and values match
   for (let key in frequencyMap1){
     if (frequencyMap2.hasOwnProperty(key) && frequencyMap1[key] === frequencyMap2[key]){
-      console.log(key, " : ", frequencyMap1[key]);
-      console.log(key, " : ", frequencyMap2[key]);
+      // console.log(key, " : ", frequencyMap1[key]);
+      // console.log(key, " : ", frequencyMap2[key]);
     } else {
       console.log(false);
       return false
@@ -42,4 +42,7 @@ const validAnagram = (stringOne, stringTwo) => {
 
 
 }
-validAnagram("butt", "tub")
+validAnagram("rice", "icer") // => true
+validAnagram("", "icer") // => false
+validAnagram("12345", "54321") // true
+validAnagram("oo", "icer") // false
