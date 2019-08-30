@@ -27,7 +27,7 @@ const digital_root = (n) => {
     // use reduce to add each number in the array
     result = new_arr.reduce( (total, num) => total + num)
     // Pass the sum into digital root recursively
-    digital_root(result)
+    return digital_root(result)
   } else{
     // If string length === 1 convert back into integer and then return value
     // return Number(numberString)
