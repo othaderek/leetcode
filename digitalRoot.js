@@ -21,9 +21,7 @@ const digital_root = (n) => {
     // If string length longer than 1 split into an array
     // Convert each value of array back into integer
     numStrArr = numberString.split("")
-    for (let i = 0; i < numStrArr.length; i++){
-      new_arr.push(Number(numStrArr[i]))
-    }
+    numStrArr = numStrArr.map( char => new_arr.push(Number(char)))
     // use reduce to add each number in the array
     result = new_arr.reduce( (total, num) => total + num)
     // Pass the sum into digital root recursively
@@ -34,3 +32,5 @@ const digital_root = (n) => {
     return Number(numberString);
   }
 }
+
+digital_root(11)
