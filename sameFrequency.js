@@ -28,7 +28,6 @@ const sameFrequency = (num1, num2) => {
   let num1Map = {}, num2Map = {}, num1Str = "", num2Str = "";
 
   if (num1 === num2){
-    console.log(true);
     return true;
   }
 
@@ -36,7 +35,6 @@ const sameFrequency = (num1, num2) => {
   num2Str = num2.toString();
 
   if (num1Str.length !== num2Str.length){
-    console.log(false);
     return false;
   }
 
@@ -51,11 +49,9 @@ const sameFrequency = (num1, num2) => {
     if ( num2Map.hasOwnProperty(key) && num1Map[key] === num2Map[key]){
 
     } else {
-      console.log(false);
       return false;
     }
   }
-  console.log(true);
   return true;
 }
 
