@@ -13,18 +13,19 @@ const averagePair = (array, targetAverage) => {
     console.log(false);
     return false;
   }
-  let lPointer = 0; rPointer = array.length - 1;
+  let i = 0;
+  let j = array.length - 1;
 
-  while (lPointer < rPointer){
-    let avg = (array[lPointer] + array[rPointer]) / 2;
+  while (i < j){
+    let avg = (array[i] + array[j]) / 2;
     if (avg === targetAverage){
       console.log(true);
-      console.log(array[lPointer], array[rPointer]);
+      console.log(array[i], array[j]);
       return true;
     } else if (avg < targetAverage){
-      lPointer++;
+      i++;
     } else {
-      rPointer--;
+      j--;
     }
   }
   console.log(false);
