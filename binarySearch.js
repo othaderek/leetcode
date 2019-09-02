@@ -13,7 +13,9 @@ const binarySearch = (array, value) => {
 
   while (min <= max){
     let middle = Math.floor((0 + 11) / 2)
-    
+
   }
 
 }
+
+binarySearch([1,2,3,4,5], 5)
