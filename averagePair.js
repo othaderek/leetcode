@@ -1,3 +1,13 @@
+/*
+  Average Pair
+
+  This checks an array to see if there is a pair of numbers that
+  equal the target average provided.
+
+  Used multiple pointers. Will add another version of the solution below this one.
+
+*/
+
 const averagePair = (array, targetAverage) => {
   if (array.length < 2){
     console.log(false);
@@ -12,13 +22,13 @@ const averagePair = (array, targetAverage) => {
       console.log(array[lPointer], array[rPointer]);
       return true;
     } else if (avg < targetAverage){
-      lPointer++
+      lPointer++;
     } else {
-      rPointer--
+      rPointer--;
     }
   }
   console.log(false);
-  return false
+  return false;
 }
 
 
