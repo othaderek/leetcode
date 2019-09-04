@@ -1,4 +1,10 @@
+/*
+  FizzBuzz
 
+  Classic FizzBuzz but we store it all in a hash!
+
+  
+*/
 const fizzBuzz = () => {
   let fizzBuzzMap = {};
 
