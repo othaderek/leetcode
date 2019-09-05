@@ -33,4 +33,4 @@ const digital_root = (n) => {
   }
 }
 
-digital_root(11)
+digital_root(11) // => 2
