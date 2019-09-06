@@ -8,14 +8,23 @@
 */
 
 const binarySearch = (array, value) => {
-  let min = 0;
-  let max = array.length - 1;
+  let left = 0;
+  let right = array.length - 1;
 
-  while (min <= max){
-    let middle = Math.floor((0 + 11) / 2)
+  while (left <= right){
+    let middle = Math.floor((left + right) / 2);
+    if (array[middle] === value){
+      console.log(middle);
+      return middle;
+    } else if (array[middle] < value) {
+      left = middle + 1
+    } else if (array[middle] > value) {
+      right = middle - 1
+    }
 
   }
-
+  console.log(-1);
+  return -1;
 }
 
-binarySearch([1,2,3,4,5], 5)
+binarySearch([0,1,4,5,10], 5)
