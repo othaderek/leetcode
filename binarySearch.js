@@ -1,10 +1,8 @@
 /*
-  Binary Search in JS
+  Binary Search in Javascript
 
-  My attempt at binary search from memory
-  Binary search only works on sorted arrays
-  This implementation will assume that the array is already sorted.
-
+  Implement Binary Search. Given a sorted array and a target
+  use binary search to find target value.
 */
 
 const binarySearch = (array, value) => {
