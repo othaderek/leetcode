@@ -24,7 +24,21 @@
 
 // First I'm gonna solve for a given array
 const maxSubsequence = (string, array) => {
-  console.log(string, array);
+  let temp;
+  for (let i = 0; i < array.length; i++){
+    if (!temp){
+      temp = array[i];
+    }
+    if (temp.length < array[i].length){
+      
+    }
+    console.log(temp, array[i]);
+
+  }
+  console.log(array);
+  for (let i = 0; i < string.length; i++){
+
+  }
 }
 
 let s = "slhiiiitt"
