@@ -24,5 +24,10 @@
 
 // First I'm gonna solve for a given array
 const maxSubsequence = (string, array) => {
-  
+  console.log(string, array);
 }
+
+let s = "slhiiiitt"
+let d = ["hit", "it", "shit"]
+
+maxSubsequence(s, d);
