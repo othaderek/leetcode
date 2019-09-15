@@ -9,10 +9,11 @@
 
 const bubbleSort = (array) => {
   let noSwaps;
-  // 
+  // This function takes params and swaps the two elements in the given array
   const swap = (array, index1, index2) => {
     [array[index1], array[index2]] = [array[index2], array[index1]];
   };
+  
   for (let i = array.length; i > 0; i--){
     noSwaps = true;
     for (let j = 0; j < i - 1; j++){
