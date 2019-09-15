@@ -1,5 +1,15 @@
+/*
+  Bubble Sort
+
+  Here is a basic implementation of Bubble Sort.
+  Basically, bubble sort is a sorting algorithm that
+  compares index values in an array and swaps them until
+  the array is sorted.
+*/
+
 const bubbleSort = (array) => {
   let noSwaps;
+  // 
   const swap = (array, index1, index2) => {
     [array[index1], array[index2]] = [array[index2], array[index1]];
   };
