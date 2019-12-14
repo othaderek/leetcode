@@ -12,7 +12,7 @@ const binarySearch = (array, value) => {
   while (left <= right){
     let middle = Math.floor((left + right) / 2);
     if (array[middle] === value){
-      console.log(array[middle]);
+      console.log(`The number ${value} is in the index of ${middle}`);
       return middle;
     } else if (array[middle] < value) {
       left = middle + 1
