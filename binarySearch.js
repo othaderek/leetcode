@@ -26,3 +26,4 @@ const binarySearch = (array, value) => {
 }
 
 binarySearch([0,1,4,5,10], 5)
+binarySearch([1,3,4,5,6,12,14,15,123,1443], 14)
