@@ -2,23 +2,21 @@
 // 32bit signed integers only
 
 const reverse = (int) => {
-    if (int > 2_147_483_647 || int < -2_147_483_647){
-        console.log(0);
-        return 0;
-    }
-
+    let reversed;
+    
     if (int < 0){
-        let reversed = int.toString().split('').reverse().join('');
-        let toNegative = `-${reversed}`
-        console.log(parseInt(toNegative));
-        
-        return parseInt(toNegative);    
+        reversed = int.toString().split('').reverse().join('');
+        reversed = `-${reversed}`
     } else{
-        let reversed = int.toString().split('').reverse().join('');
-        console.log(parseInt(reversed));
-        return parseInt(reversed);
+        reversed = int.toString().split('').reverse().join('');
     }
     
+    reversed = parseInt(reversed);
+    if ( reversed > 2147483647 || reversed < -2147483647){
+        return 0;
+    } else {
+        return parseInt(reversed);
+    }
 }
 
 reverse(123)
