@@ -8,13 +8,14 @@
 // that value by one.
 
 const frequencyCounter = (array) => {
-    let objectMap = {};
+    let mapOfElements = {};
 
-    for (const value of array) {
-        objectMap[value] = (objectMap[value] || 0) + 1
+    for (const element of array) {
+        mapOfElements[element] = (mapOfElements[element] || 0) + 1;
     }
-    console.log(objectMap);
-    
+    console.log(mapOfElements);
 }
 
-frequencyCounter([1,2,3,4,3,3,1])
+
+
+frequencyCounter([1,2,3,4,1])
